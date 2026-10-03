@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ong dos Aumigos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="../imagens/logotipo_Ong.webp" type="image/webp">
+            <img src="../imagens/logotipo_Ong.jpg" alt="Logo da ONG Aumigos, representando mãos se conectando e escirto mais" width="180" height="135">
+        </picture>
+        <h1>Ong Aumigos</h1>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">&#9776;</button>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li class="has-dropdown">
+                <a href="#projetos">Projetos</a>
+                <!-- Itens preenchidos dinamicamente por popularDropdownProjetos() em script.js,
+                     a partir da mesma fonte de dados (projetosData) usada nos cartões -->
+                <ul class="dropdown"></ul>
+            </li>
+            <li><a href="#cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contêiner principal da SPA: o roteador em js/script.js limpa e
+         injeta aqui o fragmento HTML correspondente à rota atual -->
+    <main id="app"></main>
+
+    <footer>
+        <h3>Contatos</h3>
+        <p>E-mail: contato@ong.org</p>
+        <p>Telefone: (00) 0000-0000</p>
+    </footer>
+    <!-- Day.js: biblioteca externa leve para manipulação de datas
+         (formatação e cálculo de idade), carregada antes do script
+         principal para que o objeto global "dayjs" já exista quando
+         script.js for executado -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/plugin/relativeTime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/locale/pt-br.min.js"></script>
+    <!-- type="module" habilita import/export em app.js e nos módulos
+         que ele importa. Requer que a página seja servida por HTTP
+         (ex: Live Server), não aberta direto como arquivo local. -->
+    <script type="module" src="../js/app.js"></script>
+</body>
+</html>

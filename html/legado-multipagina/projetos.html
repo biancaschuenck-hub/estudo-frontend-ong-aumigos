@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ong dos Aumigos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/logotipo_Ong.jpg" alt="Logo da ONG Aumigos, representando mãos se conectando e escirto mais">
+        <h1>Ong Aumigos</h1>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">&#9776;</button>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="has-dropdown">
+                <a href="projetos.html">Projetos</a>
+                <ul class="dropdown">
+                    <li><a href="projetos.html#projeto1">Projeto 1</a></li>
+                    <li><a href="projetos.html#projeto2">Projeto 2</a></li>
+                    <li><a href="projetos.html#projeto3">Projeto 3</a></li>
+                    <li><a href="projetos.html#projeto4">Projeto 4</a></li>
+                </ul>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <article class="card" id="projeto1">
+                <h2>Projeto 1 - feira de adoção em Maricá</h2>
+                <span class="badge badge-success">Concluído</span>
+                <p>A feira de adoção em maricá aconteceu em Agosto de 2026 no estacionamento do Boulevard de Maricá e ocoreu 20 adoções responsáveis.</p>
+                <img src="../imagens/foto_ação_humanitaria.jpg" alt="foto de ação humanitário de um filhote de cachorro.">
+            
+                <button class="card-details-btn" data-title="Feira de adoção em Maricá" data-text="A feira de adoção em maricá aconteceu em Agosto de 2026 no estacionamento do Boulevard de Maricá e ocoreu 20 adoções responsáveis.">Ver detalhes</button>
+            </article>
+
+            <article class="card" id="projeto2">
+                <h2>Projeto 2 - feira de adoção em Niterói</h2>
+                <span class="badge badge-success">Concluído</span>
+                <p>A feira de adoção em Niterói aconteceu em Setembro de 2026 no parque principal e resultou em 15 adoções responsáveis.</p>
+            <img src="../imagens/foto_projeto2.jpg" alt="Casal sorridente deitado na grama de um parque, ao lado de um cão da raça golden retriever, durante um piquenique.">
+            
+                <button class="card-details-btn" data-title="Feira de adoção em Niterói" data-text="A feira de adoção em Niterói aconteceu em Setembro de 2026 no parque principal e resultou em 15 adoções responsáveis.">Ver detalhes</button>
+            </article>
+
+            <article class="card" id="projeto3">
+                <h2>Projeto 3 - feira de adoção em São Gonçalo</h2>
+                <span class="badge badge-success">Concluído</span>
+                <p>A feira de adoção em São Gonçalo aconteceu em Outubro de 2026 no centro comercial e resultou em 12 adoções responsáveis.</p>
+            <img src="../imagens/foto_projeto3.jpg" alt="Casal sorridente tirando uma selfie enquanto segura um cão poodle de porte pequeno.">
+            
+                <button class="card-details-btn" data-title="Feira de adoção em São Gonçalo" data-text="A feira de adoção em São Gonçalo aconteceu em Outubro de 2026 no centro comercial e resultou em 12 adoções responsáveis.">Ver detalhes</button>
+            </article>
+
+            <article class="card" id="projeto4">
+                <h2>Projeto 4 - feira de adoção em Duque de Caxias</h2>
+                <span class="badge badge-success">Concluído</span>
+                <p>A feira de adoção em Duque de Caxias aconteceu em Novembro de 2026 no shopping center e resultou em 18 adoções responsáveis.</p>
+            <img src="../imagens/foto_projeto4.jpg" alt="Casal de idosos sorrindo enquanto acolhe um gato de pelagem longa e alaranjada nos braços.">
+            
+                <button class="card-details-btn" data-title="Feira de adoção em Duque de Caxias" data-text="A feira de adoção em Duque de Caxias aconteceu em Novembro de 2026 no shopping center e resultou em 18 adoções responsáveis.">Ver detalhes</button>
+            </article>
+        </div>
+
+        <div class="modal-overlay" id="modal-overlay">
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <button class="modal-close" id="modal-close" aria-label="Fechar">&times;</button>
+                <h2 id="modal-title"></h2>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Contatos</h3>
+        <p>E-mail: contato@ong.org</p>
+        <p>Telefone: (00) 0000-0000</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

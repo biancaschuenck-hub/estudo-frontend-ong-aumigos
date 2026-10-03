@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ong dos Aumigos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/logotipo_Ong.jpg" alt="Logo da ONG Aumigos, representando mãos se conectando e escirto mais">
+        <h1>Ong Aumigos</h1>
+    </header>
+
+    <nav>
+        <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">&#9776;</button>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="has-dropdown">
+                <a href="projetos.html">Projetos</a>
+                <ul class="dropdown">
+                    <li><a href="projetos.html#projeto1">Projeto 1</a></li>
+                    <li><a href="projetos.html#projeto2">Projeto 2</a></li>
+                    <li><a href="projetos.html#projeto3">Projeto 3</a></li>
+                    <li><a href="projetos.html#projeto4">Projeto 4</a></li>
+                </ul>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form>
+        <h2>Cadastre-se aqui!</h2>
+        <p>Cadastro para doação e voluntariado.</p>
+        <fieldset>
+        <legend>Informações Pessoais</legend>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="11-91234-5678"
+               pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+        
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+        
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" 
+               min="18" max="120">
+        </fieldset>
+        <button type="submit">Enviar</button>
+        </form>
+
+        <div class="toast" id="toast" role="status">Cadastro enviado com sucesso!</div>
+    </main>
+
+    <footer>
+        <h3>Contatos</h3>
+        <p>E-mail: contato@ong.org</p>
+        <p>Telefone: (00) 0000-0000</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
